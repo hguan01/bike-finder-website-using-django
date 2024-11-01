@@ -83,11 +83,8 @@ WSGI_APPLICATION = "example.wsgi.application"
 
 DATABASES = {
     "default": {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '{{RDS_DB_NAME}}',
-        'USER': '{{RDS_DB_USERNAME}}',
-        'PASSWORD': '{{RDS_DB_PASSWORD}}',
-        'HOST': '{{RDS_DB_HOST}}',
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
